@@ -6,15 +6,15 @@
   <title>Contact — Hitoki</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">
-    <div class="logo-icon">H</div>
-    hitoki
+    <img src="icone_hitoki_blanc.png" alt="icône Hitoki" height="50">
+    <img src="logo_hitoki_brun.png" alt="Hitoki" height="40">
   </a>
   <a href="index.html#formulaire" class="nav-cta">Je veux tester →</a>
 </nav>
@@ -31,13 +31,12 @@
   </p>
 
   <form class="contact-form" id="contact-form">
-    <!-- ✅ REMPLACE ICI : colle ton access_key Web3Forms -->
     <input type="hidden" name="access_key" value="TON_ACCESS_KEY_ICI">
     <input type="hidden" name="subject"    value="Nouveau message — formulaire contact Hitoki">
-    <input  type="text"  name="prenom"  placeholder="Ton prénom"         required>
-    <input  type="email" name="email"   placeholder="Ton adresse email"  required>
-    <input  type="text"  name="sujet"   placeholder="Sujet"              required>
-    <textarea            name="message" placeholder="Ton message…"       required></textarea>
+    <input  type="text"  name="prenom"  placeholder="Ton prénom"        required>
+    <input  type="email" name="email"   placeholder="Ton adresse email" required>
+    <input  type="text"  name="sujet"   placeholder="Sujet"             required>
+    <textarea            name="message" placeholder="Ton message…"      required></textarea>
     <button type="submit">Envoyer le message</button>
   </form>
 
@@ -49,7 +48,9 @@
 </main>
 
 <footer>
-  <div class="footer-logo">hitoki</div>
+  <div class="footer-logo">
+    <img src="logo_hitoki_brun.png" alt="Hitoki" height="20">
+  </div>
   <div class="footer-links">
     <a href="mentions-legales.html">Mentions légales</a>
     <a href="confidentialite.html">Confidentialité</a>
