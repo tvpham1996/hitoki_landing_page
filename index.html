@@ -19,7 +19,34 @@
     .reminders-section { padding: 80px 24px; max-width: 860px; margin: 0 auto; text-align: center; }
     .reminders-categories { display: flex; flex-direction: column; gap: 20px; margin-top: 40px; text-align: left; }
     .reminder-category { display: flex; align-items: flex-start; gap: 16px; }
-    .reminder-category-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); white-space: nowrap; min-width: 110px; padding-top: 4px; }
+    .reminder-category-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--orange); white-space: nowrap; min-width: 110px; padding-top: 4px; }
+    .reminder-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .reminder-tag { background: var(--peach-mid); border: 1px solid var(--peach-dark); border-radius: 20px; padding: 4px 14px; font-size: 0.85rem; color: var(--night-soft); }
+    .reminders-note { margin-top: 32px; font-size: 0.85rem; color: var(--muted); font-style: italic; }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(244,132,95,0.4);
+    }
+    #back-to-top.visible { opacity: 1; pointer-events: auto; }
+    #back-to-top:hover { background: var(--orange-dark); }
     .reminder-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .reminder-tag { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 4px 14px; font-size: 0.85rem; color: var(--text-secondary); }
     .reminders-note { margin-top: 32px; font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
@@ -371,6 +398,8 @@
   </div>
 </div>
 
+<button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" title="Retour en haut">↑</button>
+
 <!-- ══════════════════════════════════════
      FOOTER
      ══════════════════════════════════════ -->
@@ -388,6 +417,11 @@
      SCRIPT — Formspree AJAX
      ══════════════════════════════════════ -->
 <script>
+  const backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+
   const form = document.getElementById('form-container');
   const confirmation = document.getElementById('confirmation');
 
