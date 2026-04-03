@@ -795,3 +795,13 @@ footer {
 .form-consent a:hover {
   color: var(--night);
 }
+
+/* ═══════════════════════════════════════════
+   FORMULAIRE — MESSAGE OPTIONNEL
+   ═══════════════════════════════════════════ */
+.form-message {
+  resize: none;
+  height: 90px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
