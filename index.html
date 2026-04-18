@@ -3,22 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hitoki lit tes courriers, contrats et fiches de paie, et t'explique quoi faire — sans jargon. Rejoins la liste d'attente et accède gratuitement à toutes les fonctionnalités pendant 2 mois.">
-  <title>Hitoki — Le copain qui a tout compris.</title>
+  <meta name="description" content="Hitoki lit tes courriers, contrats et fiches de paie, et t'explique quoi faire sans jargon. Rejoins la liste d'attente et accède gratuitement à toutes les fonctionnalités pendant 2 mois.">
+  <title>Hitoki · Le copain qui a tout compris.</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══════════════════════════════════════
-     NAVBAR
-     ══════════════════════════════════════ -->
+<!-- ── NAVBAR ── -->
 <nav>
   <a href="index.html" class="logo">
     <img src="icone_hitoki_blanc.png" alt="Hitoki" height="50">
@@ -32,195 +28,304 @@
      ══════════════════════════════════════ -->
 <section class="hero">
   <div class="hero-badge">
-    <span></span>
-    Bientôt disponible ! rejoins la liste d'attente :D
+    <span class="hero-badge-dot"></span>
+    Lancement prévu en Juin 2026
   </div>
 
-  <h1>L'administration prend ton <em>temps</em></h1>
-  <h1>Hitoki te le <em>rend</em></h1>
+  <h1>L'administration prend ton <em>temps</em>.<br>Hitoki te le <em>rend</em>.</h1>
 
   <p class="hero-sub">
     Hitoki lit tes courriers, tes contrats, tes fiches de paie, t'explique quoi faire, et te rappelle tout ce que tu ne dois pas rater.
   </p>
 
   <div class="hero-cta-group">
-    <a href="#formulaire" class="btn-primary">
-      Je veux être prévenu du lancement ↓
-    </a>
-    <p class="hero-reassurance">
-      ✓ Gratuit · Aucune carte bancaire · 0 spam
-    </p>
+    <a href="#formulaire" class="btn-primary">Je veux être prévenu du lancement ↓</a>
+    <span class="hero-reassurance">Gratuit · Aucune carte bancaire · 0 spam</span>
   </div>
 
-  <div class="hero-visual hero-visual--two">
-
-    <!-- Card 1 — Anomalie impôts -->
-    <div class="phone-frame">
-      <div class="phone-upload">
-        <div class="upload-icon">📎</div>
-        <div class="upload-info">
-          <div class="upload-filename">avis_imposition_2024.pdf</div>
-          <div class="upload-status">En cours d'analyse…</div>
+  <div class="hero-demo">
+    <div class="demo-left">
+      <div class="demo-upload">
+        <div class="demo-upload-icon">📎</div>
+        <div>
+          <div class="demo-upload-name">avis_imposition_2024.pdf</div>
+          <div class="demo-upload-status">Analysé à l'instant</div>
         </div>
       </div>
-      <div class="phone-doc">
-        <div class="phone-doc-header">
-          <div class="doc-icon">📄</div>
-          <div>
-            <div class="doc-title">Anomalie détectée - déclaration 2024</div>
-            <div class="doc-sub">Analysé à l'instant</div>
-          </div>
-        </div>
-        <div class="doc-result">
-          <div class="doc-result-label">Ce que tu dois retenir</div>
-          <div class="doc-result-text doc-result-fade">
-            L'administration te réclame <strong>312€</strong> suite à une anomalie dans ta déclaration. Cependant, selon ta situation, tu pourrais être exonéré. Vérifie : ton revenu fiscal de référence, ta situation familiale, et si tu as bien coché la <strong>case 0HV</strong>. Dans ce cas précis, si ton revenu fiscal de référence est inférieur à 11 294€, tu es automatiquement exonéré et cette somme ne te sera pas réclamée. Pour le vérifier, rends-toi sur ton avis d'imposition page 2, ligne...
-          </div>
-        </div>
+      <div class="demo-result">
+        <div class="demo-result-label">Ce que ça veut dire</div>
+        <p class="demo-result-text">L'administration te réclame <strong>312€</strong> suite à une anomalie. Mais selon ta situation, tu pourrais être exonéré.</p>
       </div>
-      <div class="phone-reminder">
-        <div class="reminder-dot"></div>
-        <div class="reminder-text">Action requise</div>
-        <div class="reminder-badge">J-14</div>
-      </div>
+      <div class="demo-actions-label">Ce que tu dois faire</div>
+      <ul class="demo-actions">
+        <li class="demo-action">
+          <span class="demo-action-num">1</span>
+          Vérifie ton revenu fiscal de référence
+        </li>
+        <li class="demo-action">
+          <span class="demo-action-num">2</span>
+          Si inférieur à 11 294€ : exonération automatique
+        </li>
+        <li class="demo-action demo-action--faded">
+          <span class="demo-action-num">3</span>
+          Sinon, conteste avant le...
+        </li>
+      </ul>
     </div>
 
-    <!-- Card 2 — Fiche de paie -->
-    <div class="phone-frame">
-      <div class="phone-upload">
-        <div class="upload-icon">📎</div>
-        <div class="upload-info">
-          <div class="upload-filename">fiche_paie_mars_2025.jpg</div>
-          <div class="upload-status">En cours d'analyse…</div>
+    <div class="demo-right">
+      <div class="demo-reminder-title">Rappels créés automatiquement</div>
+      <div class="demo-reminder demo-reminder--urgent">
+        <div class="demo-reminder-dot demo-reminder-dot--urgent"></div>
+        <div>
+          <div class="demo-reminder-name">Réponse impôts</div>
+          <div class="demo-reminder-date">Dans 14 jours</div>
         </div>
+        <div class="demo-reminder-badge demo-reminder-badge--urgent">Urgent</div>
       </div>
-      <div class="phone-doc">
-        <div class="phone-doc-header">
-          <div class="doc-icon">💼</div>
-          <div>
-            <div class="doc-title">Fiche de paie - mars 2025</div>
-            <div class="doc-sub">Analysée à l'instant</div>
-          </div>
+      <div class="demo-reminder demo-reminder--ok">
+        <div class="demo-reminder-dot demo-reminder-dot--ok"></div>
+        <div>
+          <div class="demo-reminder-name">Déclaration revenus</div>
+          <div class="demo-reminder-date">Dans 4 mois</div>
         </div>
-        <div class="doc-result">
-          <div class="doc-result-label">Ce que tu dois retenir</div>
-          <div class="doc-result-text doc-result-fade">
-            Ton net ce mois-ci est <strong>1 241€</strong> au lieu de 1 428€ habituellement. Une ligne <strong>"Régularisation — 187€"</strong> a été déduite. C'est une correction sur un trop-perçu du mois dernier — légal, mais tu peux demander le détail à ton RH. Si tu penses que c'est une erreur, tu as 3 ans pour contester. Voici exactement comment formuler ta demande par écrit, ce à quoi tu as droit, et les délais légaux que ton employeur doit...
-          </div>
-        </div>
+        <div class="demo-reminder-badge demo-reminder-badge--ok">OK</div>
       </div>
-      <div class="phone-reminder">
-        <div class="reminder-dot" style="background: var(--green);"></div>
-        <div class="reminder-text">Compris - RH si besoin</div>
-        <div class="reminder-badge">OK</div>
+      <div class="demo-reminder demo-reminder--ok">
+        <div class="demo-reminder-dot demo-reminder-dot--ok"></div>
+        <div>
+          <div class="demo-reminder-name">Carte d'identité</div>
+          <div class="demo-reminder-date">Dans 8 mois</div>
+        </div>
+        <div class="demo-reminder-badge demo-reminder-badge--ok">OK</div>
+      </div>
+      <div class="demo-shield">
+        <div class="demo-shield-icon">🛡️</div>
+        <div>
+          <div class="demo-shield-label">Mamori te protège</div>
+          <div class="demo-shield-sub">15 types d'échéances suivis en permanence</div>
+        </div>
       </div>
     </div>
-
   </div>
 
-  <p class="hero-preview-note">✦ Ces aperçus sont volontairement incomplets → avec Hitoki, tu aurais l'analyse complète, étape par étape.</p>
+  <p class="hero-note">Cette analyse est volontairement tronquée. Avec Hitoki, tu reçois le tableau complet, étape par étape.</p>
 </section>
 
 <!-- ══════════════════════════════════════
      PROBLÈME
      ══════════════════════════════════════ -->
-<section class="section">
-  <div class="section-label">Tu te reconnais ?</div>
-  <h2 class="section-title">L'administration, on n'y comprend rien.</h2>
-  <h2 class="section-title">Et personne ne nous a appris.</h2>
-  <p class="section-sub">On est une génération qui se débrouille, mais certaines choses restent floues ... ou ne nous intéressent tout simplement pas.</p>
+<section class="section section--pain">
+  <div class="section-eyebrow">Tu te reconnais ?</div>
+  <h2 class="section-title">L'administration, personne nous a appris.</h2>
+  <p class="section-sub">On est une génération qui se débrouille. Mais certaines choses restent floues, et les erreurs coûtent cher.</p>
 
-  <div class="pain-grid pain-grid--2col">
+  <div class="pain-grid">
     <div class="pain-card">
-      <span class="pain-emoji">😰</span>
+      <div class="pain-emoji">😰</div>
       <div class="pain-title">Le courrier qui fait peur</div>
-      <div class="pain-text">Tu reçois une lettre des impôts. Ton cœur s'emballe. Tu ne sais pas si c'est grave. Tu la laisses sur le bureau pendant une semaine.</div>
-      <div class="pain-quote">"J'ai reçu un courrier me réclamant 300€ pour la redevance télé. J'ai failli payer sans savoir que j'étais exonéré."</div>
+      <p class="pain-text">Tu reçois une lettre des impôts. Ton cœur s'emballe. Tu ne sais pas si c'est grave. Tu la laisses sur le bureau pendant une semaine.</p>
+      <blockquote class="pain-quote">"J'ai reçu un courrier me réclamant 300€ pour la redevance télé. J'ai failli payer sans savoir que j'étais exonéré."</blockquote>
     </div>
     <div class="pain-card">
-      <span class="pain-emoji">🤷</span>
+      <div class="pain-emoji">🤷</div>
       <div class="pain-title">Les droits qu'on ne connaît pas</div>
-      <div class="pain-text">Des années à éviter le médecin parce que "c'est cher". Sans savoir que c'est remboursé. On perd ce qu'on ne sait pas réclamer.</div>
-      <div class="pain-quote">"Pendant des années je ne suis pas allée chez le dentiste ou l'ophtalmo. Je pensais que c'était trop cher. Personne ne m'avait dit."</div>
+      <p class="pain-text">Des années à éviter le médecin parce que "c'est cher". Sans savoir qu'une partie est remboursée. On perd ce qu'on ne sait pas réclamer.</p>
+      <blockquote class="pain-quote">"Je ne suis pas allée chez le dentiste pendant des années. Je pensais que c'était trop cher. Personne ne m'avait dit."</blockquote>
     </div>
     <div class="pain-card">
-      <span class="pain-emoji">📱</span>
-      <div class="pain-title">Le référent admin de la famille</div>
-      <div class="pain-text">Ton frère t'appelle pour ses impôts. Tes parents pour leur mutuelle sur internet. Tu es l'ainé, mais toi aussi tu cherches.</div>
-      <div class="pain-quote">"Mon petit frère me pose des questions sur un courrier de la CAF. Je n'ai souvent pas la réponse. Donc je stresse pour lui ET pour moi."</div>
-    </div>
-    <div class="pain-card">
-      <span class="pain-emoji">😬</span>
+      <div class="pain-emoji">😬</div>
       <div class="pain-title">Les échéances qu'on rate</div>
-      <div class="pain-text">Ton contrôle technique, ton assurance, ta carte d'identité... personne ne te prévient. Tu découvres que c'est expiré le jour où t'en as besoin.</div>
-      <div class="pain-quote">"J'ai eu 135€ d'amende parce que j'avais oublié mon contrôle technique. La date était dans les papiers du véhicule, mais qui pense à les relire ?"</div>
+      <p class="pain-text">Contrôle technique, assurance, carte d'identité... personne ne te prévient. Tu découvres que c'est expiré le jour où tu en as besoin.</p>
+      <blockquote class="pain-quote">"135€ d'amende parce que j'avais oublié mon contrôle technique. La date était dans les papiers, mais qui pense à les relire ?"</blockquote>
+    </div>
+    <div class="pain-card">
+      <div class="pain-emoji">📱</div>
+      <div class="pain-title">Le référent admin de la famille</div>
+      <p class="pain-text">Ton frère t'appelle pour ses impôts. Tes parents pour leur mutuelle. Tu es l'aîné, mais toi aussi tu cherches sur Google.</p>
+      <blockquote class="pain-quote">"Mon petit frère me pose des questions sur un courrier de la CAF. Je n'ai souvent pas la réponse. Donc je stresse pour lui ET pour moi."</blockquote>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     SOLUTION
+     HIKARI
      ══════════════════════════════════════ -->
-<div class="solution-bg">
-  <div class="section-label">La solution</div>
-  <h2 class="section-title">Hitoki comprend à ta place.</h2>
-  <h2 class="section-title">Tu n'as plus qu'à suivre.</h2>
-  <p class="section-sub">Trois fonctionnalités pensées pour zéro charge mentale.</p>
+<div class="solution-block">
+  <div class="solution-inner">
+    <div class="solution-text">
+      <div class="section-eyebrow solution-eyebrow">☀️ Hikari · lumière</div>
+      <h2 class="solution-title">N'importe quel document.<br>En langage humain.</h2>
+      <p class="solution-desc">Prends une photo ou importe un PDF. Hitoki t'explique exactement ce que ça veut dire, ce que tu dois faire, et dans quel ordre. Sans jargon. Sans te faire sentir bête.</p>
+      <ul class="solution-list">
+        <li>Courriers des impôts, CAF, Sécu</li>
+        <li>Fiches de paie et bulletins de salaire</li>
+        <li>Contrats de location ou de travail</li>
+        <li>Ordonnances et relevés médicaux</li>
+        <li>Avis de remboursement, relances, amendes</li>
+      </ul>
+      <a href="#formulaire" class="btn-primary">Je veux analyser mes documents ↓</a>
+    </div>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">📸</div>
-      <div class="feature-title">Analyse instantanée</div>
-      <div class="feature-text">Prends une photo de n'importe quel document — courrier, contrat, fiche de paie, ordonnance. Hitoki te dit exactement ce que ça veut dire et quoi faire.</div>
-      <span class="feature-tag">Photo · Scan · PDF</span>
+    <div class="solution-visual">
+      <div class="sv-card sv-card--main">
+        <div class="sv-header">
+          <div class="sv-icon">💼</div>
+          <div>
+            <div class="sv-doc-name">Fiche de paie · mars 2025</div>
+            <div class="sv-doc-date">Analysée à l'instant</div>
+          </div>
+        </div>
+        <div class="sv-section">
+          <div class="sv-section-label">Ce que tu dois retenir</div>
+          <p class="sv-section-text">Ton net ce mois-ci est <strong style="color:white">1 241€</strong> au lieu de 1 428€ habituellement. Une ligne "Régularisation" de 187€ a été déduite.</p>
+        </div>
+        <div class="sv-section">
+          <div class="sv-section-label">Ce que tu dois faire</div>
+          <div class="sv-step"><span class="sv-step-n">1</span>Demande le détail à ton service RH</div>
+          <div class="sv-step"><span class="sv-step-n">2</span>Si tu penses à une erreur, tu as 3 ans pour contester</div>
+          <div class="sv-step sv-step--faded"><span class="sv-step-n">3</span>Voici exactement comment formuler ta demande...</div>
+        </div>
+      </div>
+      <div class="sv-card sv-card--risk">
+        <div class="sv-risk-icon">⚠️</div>
+        <div>
+          <div class="sv-risk-label">Point de vigilance</div>
+          <p class="sv-risk-text">Vérifie que la régularisation correspond bien à un trop-perçu réel, ce type de ligne peut parfois être appliqué à tort.</p>
+        </div>
+      </div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔔</div>
-      <div class="feature-title">Rappels pour toute ta vie</div>
-      <div class="feature-text">Contrôle technique, carte d'identité, déclaration CAF, vaccins, assurance, renouvellement de bail... Hitoki connaît toutes les échéances qui comptent et te prévient bien avant qu'il soit trop tard. Tu n'as plus rien à surveiller.</div>
-      <span class="feature-tag">Zéro oubli · Toute ta vie</span>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🧠</div>
-      <div class="feature-title">Zéro jargon</div>
-      <div class="feature-text">Pas de "cotisation patronale" ni de "base imposable". Hitoki parle comme un ami qui s'y connaît. C'est clair, direct, sans te faire sentir bête.</div>
-      <span class="feature-tag">Langage humain</span>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin-top: 48px;">
-    <a href="#formulaire" class="btn-primary">Je veux zéro charge mentale ↓</a>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
+     MAMORI
+     ══════════════════════════════════════ -->
+<section class="mamori-block">
+  <div class="mamori-inner">
+    <div class="mamori-visual">
+      <div class="mamori-timeline">
+        <div class="mt-title">Tes échéances à venir</div>
+        <div class="mt-item mt-item--urgent">
+          <div class="mt-dot mt-dot--urgent"></div>
+          <div class="mt-info">
+            <div class="mt-name">Réponse impôts · contestation</div>
+            <div class="mt-date">Dans 14 jours</div>
+          </div>
+          <span class="mt-badge mt-badge--urgent">Urgent</span>
+        </div>
+        <div class="mt-item mt-item--ok">
+          <div class="mt-dot mt-dot--ok"></div>
+          <div class="mt-info">
+            <div class="mt-name">Contrôle technique</div>
+            <div class="mt-date">Dans 2 mois</div>
+          </div>
+          <span class="mt-badge mt-badge--ok">Prévu</span>
+        </div>
+        <div class="mt-item mt-item--ok">
+          <div class="mt-dot mt-dot--ok"></div>
+          <div class="mt-info">
+            <div class="mt-name">Déclaration de revenus</div>
+            <div class="mt-date">Dans 4 mois</div>
+          </div>
+          <span class="mt-badge mt-badge--ok">Prévu</span>
+        </div>
+        <div class="mt-item mt-item--ok">
+          <div class="mt-dot mt-dot--ok"></div>
+          <div class="mt-info">
+            <div class="mt-name">Passeport</div>
+            <div class="mt-date">Dans 11 mois</div>
+          </div>
+          <span class="mt-badge mt-badge--ok">Prévu</span>
+        </div>
+        <div class="mt-footer">
+          <span>🛡️</span>
+          <span>12 échéances surveillées en ce moment</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mamori-text">
+      <div class="section-eyebrow">🛡️ Mamori · protection</div>
+      <h2 class="solution-title mamori-title">Plus jamais une échéance ratée.</h2>
+      <p class="solution-desc">Hitoki connaît les délais pour chaque type d'échéance. Tu coches ce qui te concerne, il calcule quand te prévenir. J-30, J-7, J-1 selon l'urgence.</p>
+      <div class="mamori-categories">
+        <span class="mamori-cat"><span>🪪</span> Identité</span>
+        <span class="mamori-cat"><span>🚗</span> Véhicule</span>
+        <span class="mamori-cat"><span>🏠</span> Logement</span>
+        <span class="mamori-cat"><span>📋</span> Fiscal</span>
+        <span class="mamori-cat"><span>🏥</span> Santé</span>
+        <span class="mamori-cat"><span>💼</span> Emploi</span>
+      </div>
+      <a href="#formulaire" class="btn-primary">Je ne veux plus jamais rien rater ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
      COMMENT ÇA MARCHE
      ══════════════════════════════════════ -->
-<section class="section">
-  <div class="section-label">Comment ça marche</div>
-  <h2 class="section-title">Simple comme prendre une photo.</h2>
-  <p class="section-sub">Trois étapes. Moins de 30 secondes.</p>
+<section class="how-section">
+  <div class="section-eyebrow">Comment ça marche</div>
+  <h2 class="section-title">Deux outils. Une seule logique.</h2>
+  <p class="section-sub">Chacun a son rôle, les deux se complètent.</p>
 
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <div class="step-title">Tu importes ton document</div>
-        <div class="step-text">Photo prise depuis ton téléphone, scan ou PDF. Plus l'image est nette, meilleure sera l'analyse ! Hitoki s'adapte à tous tes documents du quotidien.</div>
+  <div class="how-grid">
+    <div class="how-col">
+      <div class="how-col-header">
+        <span class="how-col-icon">☀️</span>
+        <span class="how-col-name">Hikari · analyse</span>
+      </div>
+      <div class="how-step-item">
+        <div class="how-num">1</div>
+        <div>
+          <div class="how-title">Tu importes ton document</div>
+          <p class="how-text">Photo depuis ton téléphone, scan ou PDF. Hitoki accepte tous les formats du quotidien.</p>
+        </div>
+      </div>
+      <div class="how-step-item">
+        <div class="how-num">2</div>
+        <div>
+          <div class="how-title">Ton document est anonymisé puis supprimé</div>
+          <p class="how-text">Avant toute analyse, tes données personnelles sont retirées automatiquement. Le document original est supprimé immédiatement.</p>
+        </div>
+      </div>
+      <div class="how-step-item">
+        <div class="how-num">3</div>
+        <div>
+          <div class="how-title">Tu reçois une synthèse claire</div>
+          <p class="how-text">En quelques secondes : ce que ça veut dire, ce que tu dois faire, les dates à retenir.</p>
+        </div>
       </div>
     </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <div class="step-title">Hitoki analyse et explique</div>
-        <div class="step-text">En quelques secondes, tu reçois un résumé clair : de quoi il s'agit, ce que tu dois retenir, les actions à faire, et les dates importantes à ne pas rater.</div>
+
+    <div class="how-divider"></div>
+
+    <div class="how-col">
+      <div class="how-col-header">
+        <span class="how-col-icon">🛡️</span>
+        <span class="how-col-name">Mamori · rappels</span>
       </div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
-        <div class="step-title">Tu n'y penses plus</div>
-        <div class="step-text">Hitoki crée automatiquement les rappels liés au document. Tu reçois une notification au bon moment — J-30, J-7, J-1. Tout roule sans que tu aies à y penser.</div>
+      <div class="how-step-item">
+        <div class="how-num how-num--dark">1</div>
+        <div>
+          <div class="how-title">Tu choisis tes échéances</div>
+          <p class="how-text">Tu coches ce qui te concerne : voiture, logement, santé, fiscal... Hitoki connaît déjà les règles pour chaque type.</p>
+        </div>
+      </div>
+      <div class="how-step-item">
+        <div class="how-num how-num--dark">2</div>
+        <div>
+          <div class="how-title">Tu saisis les informations de base</div>
+          <p class="how-text">Date d'expiration de ta carte d'identité, dernier contrôle technique... Juste ce qu'il faut pour que Hitoki calcule quand te prévenir.</p>
+        </div>
+      </div>
+      <div class="how-step-item">
+        <div class="how-num how-num--dark">3</div>
+        <div>
+          <div class="how-title">Hitoki te prévient au bon moment</div>
+          <p class="how-text">J-30, J-7, J-1 selon l'échéance. Tu reçois une notification quand tu as encore le temps d'agir.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -230,13 +335,13 @@
      RAPPELS — liste
      ══════════════════════════════════════ -->
 <section class="reminders-section">
-  <div class="section-label">Ce que tu n'auras plus jamais à surveiller</div>
+  <div class="section-eyebrow">Ce que tu n'auras plus jamais à surveiller</div>
   <h2 class="section-title">Hitoki se souvient de tout ça à ta place.</h2>
   <p class="section-sub">Une liste non exhaustive de ce qu'on oublie tous, tôt ou tard.</p>
 
-  <div class="reminders-categories">
-    <div class="reminder-category">
-      <div class="reminder-category-label">🪪 Identité</div>
+  <div class="reminders-grid">
+    <div class="reminder-group">
+      <div class="reminder-group-label">🪪 Identité</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Carte d'identité</span>
         <span class="reminder-tag">Passeport</span>
@@ -244,44 +349,43 @@
         <span class="reminder-tag">Titre de séjour</span>
       </div>
     </div>
-    <div class="reminder-category">
-      <div class="reminder-category-label">🚗 Véhicule</div>
+    <div class="reminder-group">
+      <div class="reminder-group-label">🚗 Véhicule</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Contrôle technique</span>
         <span class="reminder-tag">Assurance auto</span>
-        <span class="reminder-tag">Révision</span>
+        <span class="reminder-tag">Vidange</span>
       </div>
     </div>
-    <div class="reminder-category">
-      <div class="reminder-category-label">🏠 Logement</div>
+    <div class="reminder-group">
+      <div class="reminder-group-label">🏠 Logement</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Assurance habitation</span>
         <span class="reminder-tag">Entretien chaudière</span>
-        <span class="reminder-tag">Révision annuelle du loyer</span>
+        <span class="reminder-tag">Révision du loyer</span>
         <span class="reminder-tag">Détecteur de fumée</span>
       </div>
     </div>
-    <div class="reminder-category">
-      <div class="reminder-category-label">📋 Fiscal</div>
+    <div class="reminder-group">
+      <div class="reminder-group-label">📋 Fiscal</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Déclaration de revenus</span>
         <span class="reminder-tag">Taxe foncière</span>
         <span class="reminder-tag">Déclaration URSSAF</span>
-        <span class="reminder-tag">Déclaration ressources CAF</span>
+        <span class="reminder-tag">Déclaration CAF</span>
       </div>
     </div>
-    <div class="reminder-category">
-      <div class="reminder-category-label">🏥 Santé</div>
+    <div class="reminder-group">
+      <div class="reminder-group-label">🏥 Santé</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Dentiste</span>
         <span class="reminder-tag">Ophtalmologue</span>
         <span class="reminder-tag">Vaccin DTP</span>
         <span class="reminder-tag">Renouvellement ordonnance</span>
-        <span class="reminder-tag">Bilan annuel</span>
       </div>
     </div>
-    <div class="reminder-category">
-      <div class="reminder-category-label">💼 Emploi</div>
+    <div class="reminder-group">
+      <div class="reminder-group-label">💼 Emploi</div>
       <div class="reminder-tags">
         <span class="reminder-tag">Actualisation France Travail</span>
         <span class="reminder-tag">Droits CPF</span>
@@ -290,61 +394,57 @@
       </div>
     </div>
   </div>
+  <p class="reminders-note">Et bien d'autres encore · Hitoki s'enrichit en permanence.</p>
+</section>
 
-  <p class="reminders-note">Et bien d'autres encore — Hitoki s'enrichit en permanence.</p>
+<!-- ══════════════════════════════════════
+     PARTICIPATION CTA
+     ══════════════════════════════════════ -->
+<section class="participate-block">
+  <div class="participate-inner">
 
-  <div style="text-align: center; margin-top: 40px;">
-    <a href="#formulaire" class="btn-primary">Je ne veux plus jamais rater une échéance ↓</a>
+    <div class="participate-left">
+      <div class="participate-badge">
+        <span class="participate-badge-dot"></span>
+        Bientôt disponible
+      </div>
+      <h2 class="participate-title">On construit Hitoki.<br>Rejoins l'aventure.</h2>
+      <p class="participate-text">Hitoki n'est pas encore lancé. C'est le meilleur moment pour rejoindre les premiers ! Tu façonnes directement le produit, et tu accèdes à tout gratuitement pendant 2 mois.</p>
+      <a href="#formulaire" class="participate-cta">Rejoindre la liste d'attente →</a>
+    </div>
+
+    <div class="participate-right">
+      <div class="participate-item">
+        <div class="participate-icon">🎁</div>
+        <div>
+          <div class="participate-item-title">2 mois offerts au lancement</div>
+          <div class="participate-item-sub">Accès complet à toutes les fonctionnalités, sans carte bancaire</div>
+        </div>
+      </div>
+      <div class="participate-item">
+        <div class="participate-icon">💬</div>
+        <div>
+          <div class="participate-item-title">Ton avis compte vraiment</div>
+          <div class="participate-item-sub">On lit chaque retour et on améliore le produit chaque semaine</div>
+        </div>
+      </div>
+      <div class="participate-item">
+        <div class="participate-icon">⚡</div>
+        <div>
+          <div class="participate-item-title">Accès en avant-première</div>
+          <div class="participate-item-sub">Les inscrits sur la liste sont prévenus en premiers, avant tout le monde</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- ══════════════════════════════════════
-     SOCIAL PROOF
-     ══════════════════════════════════════ 
-<section class="section" style="padding-top: 0;">
-  <div class="section-label">Ils nous ont répondu</div>
-  <h2 class="section-title">Un problème universel</h2>
-  <p class="section-sub">On a posé la question autour de nous. Voilà ce qu'ils ont dit.</p>
-
-  <div class="proof-grid">
-    <div class="proof-card">
-      <div class="proof-text">"J'aurais tellement eu besoin de ça quand j'ai reçu ma première fiche de paie. Je ne comprenais rien aux lignes de cotisations."</div>
-      <div class="proof-author">
-        <div class="proof-avatar">N</div>
-        <div>
-          <div class="proof-name">Nolan, 28 ans</div>
-          <div class="proof-meta"></div>
-        </div>
-      </div>
-    </div>
-    <div class="proof-card">
-      <div class="proof-text">"Les rappels c'est ce dont j'ai le plus besoin. Je rate toujours mes échéances d'assurance parce que je ne sais pas quand elles tombent."</div>
-      <div class="proof-author">
-        <div class="proof-avatar">T</div>
-        <div>
-          <div class="proof-name">Thomas, 28 ans</div>
-          <div class="proof-meta">Jeune actif, Paris</div>
-        </div>
-      </div>
-    </div>
-    <div class="proof-card">
-      <div class="proof-text">"Mon cas c'est les courriers CAF. Je les reçois, je panique, je ne sais pas si j'ai fait quelque chose de mal. Un outil qui explique ça, je signe."</div>
-      <div class="proof-author">
-        <div class="proof-avatar">S</div>
-        <div>
-          <div class="proof-name">Sofia, 22 ans</div>
-          <div class="proof-meta">Étudiante, Lyon</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-<!-- ══════════════════════════════════════
-     FORMULAIRE (Formspree)
+     FORMULAIRE (Web3Forms)
      ══════════════════════════════════════ -->
 <div class="form-section" id="formulaire">
-  <h2 class="section-title">Tu veux être parmi les premiers ?</h2>
+  <h2 class="form-title">Tu veux être parmi les premiers ?</h2>
   <p class="form-intro">Laisse ton email et on te prévient dès qu'Hitoki est prêt.</p>
   <span class="form-offer">🎁 2 mois gratuits pour les premiers inscrits</span>
   <span class="form-offer-note">offre valable pour toute inscription avant le lancement</span>
@@ -352,27 +452,29 @@
   <div class="form-wrapper">
     <form id="form-container">
       <input type="hidden" name="access_key" value="69e9583b-8713-4d02-9dc2-13e078edf11e">
-      <input type="hidden" name="subject"    value="Nouvelle inscription — liste d'attente Hitoki">
-      <input type="hidden" name="source"     value="landing_page_v1">
+      <input type="hidden" name="subject"    value="Nouvelle inscription · liste d'attente Hitoki">
+      <input type="hidden" name="source"     value="landing_page_v2">
       <input type="hidden" name="consent_version" value="1.0">
       <div class="form-row">
-        <input type="text"  class="form-input" name="prenom"  placeholder="Ton prénom" required>
-        <input type="email" class="form-input" name="email"   placeholder="Ton email"  required>
+        <div class="form-field">
+          <label class="form-label">Ton prénom</label>
+          <input type="text" class="form-input" name="prenom" placeholder="Ex : Sophie" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Ton email</label>
+          <input type="email" class="form-input" name="email" placeholder="Ex : sophie@gmail.com" required>
+        </div>
       </div>
       <label class="form-consent">
         <input type="checkbox" name="consent" required>
-        <span>J'accepte de recevoir un unique email m'informant du lancement de Hitoki. Je comprends que mon adresse email sera supprimée définitivement après l'envoi de cet email. Consulter notre  <a href="confidentialite.html" target="_blank">Politique de confidentialité</a>.</span>
+        <span>J'accepte de recevoir un unique email m'informant du lancement de Hitoki. Je comprends que mon adresse email sera supprimée définitivement après l'envoi de cet email. Consulter notre <a href="confidentialite.html" target="_blank">Politique de confidentialité</a>.</span>
       </label>
       <textarea class="form-input form-message" name="message" placeholder="Une suggestion, une remarque, un document que tu aimerais qu'on analyse ? Dis-nous tout ! (optionnel)"></textarea>
       <button type="submit" class="form-submit">
         Je veux être prévenu du lancement →
       </button>
-      <p class="form-legal">
-        Votre email sera utilisé uniquement pour vous informer du lancement. 
-      </p>
-      <p class="form-legal">
-        Aucun spam. Il sera supprimé après l’envoi de cet email.
-      </p>
+      <p class="form-legal">Votre email sera utilisé uniquement pour vous informer du lancement.</p>
+      <p class="form-legal">Aucun spam. Il sera supprimé après l'envoi de cet email.</p>
     </form>
 
     <div class="confirmation" id="confirmation">
@@ -383,11 +485,9 @@
   </div>
 </div>
 
-<button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" title="Retour en haut">↑</button>
+<button type="button" id="back-to-top" title="Retour en haut">↑</button>
 
-<!-- ══════════════════════════════════════
-     FOOTER
-     ══════════════════════════════════════ -->
+<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-logo">
     <img src="logo_hitoki_brun.png" alt="Hitoki" height="20">
@@ -400,9 +500,6 @@
   <div class="footer-copy">© Hitoki 2026 · hitoki.fr</div>
 </footer>
 
-<!-- ══════════════════════════════════════
-     SCRIPT — Formspree AJAX
-     ══════════════════════════════════════ -->
 <script>
   const backToTop = document.getElementById('back-to-top');
   window.addEventListener('scroll', () => {
@@ -414,23 +511,16 @@
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
-
     const data = new FormData(form);
     const object = Object.fromEntries(data);
     const json = JSON.stringify(object);
-
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: json
       });
-
       const result = await res.json();
-
       if (result.success) {
         form.style.display = 'none';
         confirmation.style.display = 'flex';
