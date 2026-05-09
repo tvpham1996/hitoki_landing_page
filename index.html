@@ -35,7 +35,7 @@
   <h1>L'administration prend ton <em>temps</em>.<br>Hitoki te le <em>rend</em>.</h1>
 
   <p class="hero-sub">
-    Hitoki lit tes courriers, tes contrats, tes fiches de paie, t'explique quoi faire, et te rappelle tout ce que tu ne dois pas rater.
+    Hitoki lit tes documents à ta place, te prévient avant qu'il soit trop tard, et centralise tout ce qui compte au même endroit. Pour que tu puisses enfin souffler.
   </p>
 
   <div class="hero-cta-group">
@@ -113,37 +113,48 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     PROBLÈME
+     DOULEURS
      ══════════════════════════════════════ -->
-<section class="section section--pain">
-  <div class="section-eyebrow">Tu te reconnais ?</div>
-  <h2 class="section-title">L'administration, personne nous a appris.</h2>
-  <p class="section-sub">On est une génération qui se débrouille. Mais certaines choses restent floues, et les erreurs coûtent cher.</p>
+<section class="section--pain lp-pain">
+  <div class="pain-inner">
+    <div class="pain-header">
+      <div class="section-eyebrow lp-eyebrow--light">Tu te reconnais ?</div>
+      <h2 class="section-title lp-title--light">On est une génération qui se débrouille.<br>Mais certaines choses restent floues.</h2>
+      <p class="section-sub lp-sub--light">Et les erreurs, elles, coûtent cher.</p>
+    </div>
 
-  <div class="pain-grid">
-    <div class="pain-card">
-      <div class="pain-emoji">😰</div>
-      <div class="pain-title">Le courrier qui fait peur</div>
-      <p class="pain-text">Tu reçois une lettre des impôts. Ton cœur s'emballe. Tu ne sais pas si c'est grave. Tu la laisses sur le bureau pendant une semaine.</p>
-      <blockquote class="pain-quote">"J'ai reçu un courrier me réclamant 300€ pour la redevance télé. J'ai failli payer sans savoir que j'étais exonéré."</blockquote>
+    <div class="pain-grid" id="pain-grid">
+      <div class="pain-card pain-card--dark">
+        <div class="pain-emoji">😰</div>
+        <div class="pain-title lp-pain-title">Le courrier qui fait peur</div>
+        <p class="pain-text lp-pain-text">Une lettre des impôts. Ton cœur s'emballe. Tu ne sais pas si c'est grave. Elle reste sur le bureau pendant une semaine.</p>
+        <blockquote class="pain-quote lp-pain-quote">"J'ai reçu un courrier me réclamant 300€. J'ai failli payer sans savoir que j'étais exonéré."</blockquote>
+      </div>
+      <div class="pain-card pain-card--dark">
+        <div class="pain-emoji">🤷</div>
+        <div class="pain-title lp-pain-title">Les droits qu'on ne connaît pas</div>
+        <p class="pain-text lp-pain-text">Des années à éviter le médecin parce que "c'est cher". Sans savoir qu'une partie est remboursée. On perd ce qu'on ne sait pas réclamer.</p>
+        <blockquote class="pain-quote lp-pain-quote">"Je ne suis pas allée chez le dentiste pendant des années. Je pensais que c'était trop cher. Personne ne m'avait dit."</blockquote>
+      </div>
+      <div class="pain-card pain-card--dark">
+        <div class="pain-emoji">😬</div>
+        <div class="pain-title lp-pain-title">Les échéances qu'on rate</div>
+        <p class="pain-text lp-pain-text">Contrôle technique, assurance, carte d'identité... Personne ne te prévient. Tu découvres que c'est expiré le jour où tu en as besoin.</p>
+        <blockquote class="pain-quote lp-pain-quote">"135€ d'amende parce que j'avais oublié mon contrôle technique. La date était dans les papiers, mais qui pense à les relire ?"</blockquote>
+      </div>
+      <div class="pain-card pain-card--dark">
+        <div class="pain-emoji">📱</div>
+        <div class="pain-title lp-pain-title">Le référent administratif de la famille</div>
+        <p class="pain-text lp-pain-text">Ton frère pour ses impôts. Tes parents pour leur mutuelle. Tu es l'aîné, mais toi aussi tu cherches sur Google.</p>
+        <blockquote class="pain-quote lp-pain-quote">"Mon petit frère me pose des questions sur un courrier de la CAF. Je n'ai souvent pas la réponse. Donc je stresse pour lui et pour moi."</blockquote>
+      </div>
     </div>
-    <div class="pain-card">
-      <div class="pain-emoji">🤷</div>
-      <div class="pain-title">Les droits qu'on ne connaît pas</div>
-      <p class="pain-text">Des années à éviter le médecin parce que "c'est cher". Sans savoir qu'une partie est remboursée. On perd ce qu'on ne sait pas réclamer.</p>
-      <blockquote class="pain-quote">"Je ne suis pas allée chez le dentiste pendant des années. Je pensais que c'était trop cher. Personne ne m'avait dit."</blockquote>
-    </div>
-    <div class="pain-card">
-      <div class="pain-emoji">😬</div>
-      <div class="pain-title">Les échéances qu'on rate</div>
-      <p class="pain-text">Contrôle technique, assurance, carte d'identité... personne ne te prévient. Tu découvres que c'est expiré le jour où tu en as besoin.</p>
-      <blockquote class="pain-quote">"135€ d'amende parce que j'avais oublié mon contrôle technique. La date était dans les papiers, mais qui pense à les relire ?"</blockquote>
-    </div>
-    <div class="pain-card">
-      <div class="pain-emoji">📱</div>
-      <div class="pain-title">Le référent admin de la famille</div>
-      <p class="pain-text">Ton frère t'appelle pour ses impôts. Tes parents pour leur mutuelle. Tu es l'aîné, mais toi aussi tu cherches sur Google.</p>
-      <blockquote class="pain-quote">"Mon petit frère me pose des questions sur un courrier de la CAF. Je n'ai souvent pas la réponse. Donc je stresse pour lui ET pour moi."</blockquote>
+    <div class="pain-dots" id="pain-dots">
+      <span class="pain-dot pain-dot--active"></span>
+      <span class="pain-dot"></span>
+      <span class="pain-dot"></span>
+      <span class="pain-dot"></span>
+      <span class="pain-scroll-hint">→</span>
     </div>
   </div>
 </section>
@@ -151,47 +162,52 @@
 <!-- ══════════════════════════════════════
      HIKARI
      ══════════════════════════════════════ -->
-<div class="solution-block">
-  <div class="solution-inner">
-    <div class="solution-text">
-      <div class="section-eyebrow solution-eyebrow">☀️ Hikari · lumière</div>
-      <h2 class="solution-title">N'importe quel document.<br>En langage humain.</h2>
-      <p class="solution-desc">Prends une photo ou importe un PDF. Hitoki t'explique exactement ce que ça veut dire, ce que tu dois faire, et dans quel ordre. Sans jargon. Sans te faire sentir bête.</p>
-      <ul class="solution-list">
-        <li>Courriers des impôts, CAF, Sécu</li>
-        <li>Fiches de paie et bulletins de salaire</li>
-        <li>Contrats de location ou de travail</li>
-        <li>Ordonnances et relevés médicaux</li>
-        <li>Avis de remboursement, relances, amendes</li>
-      </ul>
-      <a href="#formulaire" class="btn-primary">Je veux analyser mes documents ↓</a>
-    </div>
+<div class="lp-solution-wrap" id="hikari">
+  <div class="lp-solution-card lp-solution-card--amber">
+    <div class="solution-inner">
+      <div class="solution-text">
+        <div class="lp-eyebrow lp-eyebrow--amber">
+          <span class="lp-eyebrow-icon lp-eyebrow-icon--amber">☀️</span>
+          Hikari · lumière
+        </div>
+        <h2 class="solution-title lp-solution-title">N'importe quel document.<br>En langage humain.</h2>
+        <p class="solution-desc lp-solution-desc">Prends une photo ou importe un PDF. Hitoki t'explique exactement ce que ça veut dire, ce que tu dois faire, et dans quel ordre. Sans jargon. Sans te faire sentir bête.</p>
+        <ul class="lp-solution-list lp-solution-list--amber">
+          <li>Courriers des impôts, CAF, Sécu</li>
+          <li>Fiches de paie et bulletins de salaire</li>
+          <li>Contrats de location ou de travail</li>
+          <li>Ordonnances et relevés médicaux</li>
+          <li>Avis de remboursement, relances, amendes</li>
+        </ul>
+        <a href="#formulaire" class="lp-btn-hikari">Analyser mes documents au lancement →</a>
+      </div>
 
-    <div class="solution-visual">
-      <div class="sv-card sv-card--main">
-        <div class="sv-header">
-          <div class="sv-icon">💼</div>
-          <div>
-            <div class="sv-doc-name">Fiche de paie · mars 2025</div>
-            <div class="sv-doc-date">Analysée à l'instant</div>
+      <div class="solution-visual">
+        <div class="lp-sv-card lp-sv-card--amber">
+          <div class="sv-header">
+            <div class="lp-sv-icon lp-sv-icon--amber">📄</div>
+            <div>
+              <div class="sv-doc-name lp-sv-doc-name">Contrat de bail · renouvellement</div>
+              <div class="sv-doc-date lp-sv-doc-date">Analysé à l'instant</div>
+            </div>
+          </div>
+          <div class="sv-section">
+            <div class="lp-sv-section-label lp-sv-section-label--amber">Ce que tu dois retenir</div>
+            <p class="lp-sv-section-text">Ton loyer augmente de <strong>2,47%</strong> au 1er janvier, conformément à l'indice IRL. C'est légal. Le nouveau loyer sera de <strong>784€</strong> au lieu de 765€.</p>
+          </div>
+          <div class="sv-section">
+            <div class="lp-sv-section-label lp-sv-section-label--amber">Ce que tu dois faire</div>
+            <div class="sv-step"><span class="lp-sv-step-n lp-sv-step-n--amber">1</span> Vérifier que l'IRL appliqué correspond bien au dernier publié par l'INSEE</div>
+            <div class="sv-step"><span class="lp-sv-step-n lp-sv-step-n--amber">2</span> Signer et renvoyer l'avenant avant le 15 décembre</div>
+            <div class="sv-step sv-step--faded"><span class="lp-sv-step-n lp-sv-step-n--amber">3</span> Mettre à jour ton virement permanent...</div>
           </div>
         </div>
-        <div class="sv-section">
-          <div class="sv-section-label">Ce que tu dois retenir</div>
-          <p class="sv-section-text">Ton net ce mois-ci est <strong style="color:white">1 241€</strong> au lieu de 1 428€ habituellement. Une ligne "Régularisation" de 187€ a été déduite.</p>
-        </div>
-        <div class="sv-section">
-          <div class="sv-section-label">Ce que tu dois faire</div>
-          <div class="sv-step"><span class="sv-step-n">1</span>Demande le détail à ton service RH</div>
-          <div class="sv-step"><span class="sv-step-n">2</span>Si tu penses à une erreur, tu as 3 ans pour contester</div>
-          <div class="sv-step sv-step--faded"><span class="sv-step-n">3</span>Voici exactement comment formuler ta demande...</div>
-        </div>
-      </div>
-      <div class="sv-card sv-card--risk">
-        <div class="sv-risk-icon">⚠️</div>
-        <div>
-          <div class="sv-risk-label">Point de vigilance</div>
-          <p class="sv-risk-text">Vérifie que la régularisation correspond bien à un trop-perçu réel, ce type de ligne peut parfois être appliqué à tort.</p>
+        <div class="lp-sv-card lp-sv-card--risk-amber">
+          <div class="sv-risk-icon">⚠️</div>
+          <div>
+            <div class="lp-sv-risk-label lp-sv-risk-label--amber">Point de vigilance</div>
+            <div class="lp-sv-risk-text">Si le bailleur a appliqué le mauvais indice, tu peux contester et demander le remboursement du trop-perçu.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -201,74 +217,85 @@
 <!-- ══════════════════════════════════════
      MAMORI
      ══════════════════════════════════════ -->
-<section class="mamori-block">
-  <div class="mamori-inner">
-    <div class="mamori-visual">
-      <div class="mamori-timeline">
-        <div class="mt-title">Tes échéances à venir</div>
-        <div class="mt-item mt-item--urgent">
-          <div class="mt-dot mt-dot--urgent"></div>
-          <div class="mt-info">
-            <div class="mt-name">Réponse impôts · contestation</div>
-            <div class="mt-date">Dans 14 jours</div>
+<div class="lp-mamori-wrap" id="mamori">
+  <div class="lp-solution-card lp-solution-card--green">
+    <div class="mamori-inner">
+      <div class="mamori-visual">
+        <div class="mamori-timeline lp-mamori-dash">
+          <div class="mt-title lp-dash-title">Mes échéances</div>
+          <div class="lp-mamori-section-label lp-mamori-section-label--urgent">À traiter</div>
+          <div class="mt-item lp-mt-item--urgent">
+            <div class="mt-dot mt-dot--urgent"></div>
+            <div class="mt-info">
+              <div class="mt-name">Contrôle technique</div>
+              <div class="mt-date">Expiré depuis 3 jours</div>
+            </div>
+            <div class="mt-badge mt-badge--urgent">Dépassé</div>
           </div>
-          <span class="mt-badge mt-badge--urgent">Urgent</span>
-        </div>
-        <div class="mt-item mt-item--ok">
-          <div class="mt-dot mt-dot--ok"></div>
-          <div class="mt-info">
-            <div class="mt-name">Contrôle technique</div>
-            <div class="mt-date">Dans 2 mois</div>
+          <div class="mt-item lp-mt-item--approche">
+            <div class="mt-dot lp-mt-dot--approche"></div>
+            <div class="mt-info">
+              <div class="mt-name">Déclaration CAF</div>
+              <div class="mt-date">Dans 12 jours</div>
+            </div>
+            <div class="mt-badge lp-mt-badge--approche">Bientôt</div>
           </div>
-          <span class="mt-badge mt-badge--ok">Prévu</span>
-        </div>
-        <div class="mt-item mt-item--ok">
-          <div class="mt-dot mt-dot--ok"></div>
-          <div class="mt-info">
-            <div class="mt-name">Déclaration de revenus</div>
-            <div class="mt-date">Dans 4 mois</div>
+          <div class="lp-mamori-section-label lp-mamori-section-label--ok">Sous contrôle</div>
+          <div class="mt-item lp-mt-item--ok">
+            <div class="mt-dot mt-dot--ok"></div>
+            <div class="mt-info">
+              <div class="mt-name">Assurance habitation</div>
+              <div class="mt-date">Renouvelée en mars</div>
+            </div>
+            <div class="mt-badge mt-badge--ok">OK</div>
           </div>
-          <span class="mt-badge mt-badge--ok">Prévu</span>
-        </div>
-        <div class="mt-item mt-item--ok">
-          <div class="mt-dot mt-dot--ok"></div>
-          <div class="mt-info">
-            <div class="mt-name">Passeport</div>
-            <div class="mt-date">Dans 11 mois</div>
+          <div class="mt-item lp-mt-item--ok">
+            <div class="mt-dot mt-dot--ok"></div>
+            <div class="mt-info">
+              <div class="mt-name">Passeport</div>
+              <div class="mt-date">Valide 3 ans</div>
+            </div>
+            <div class="mt-badge mt-badge--ok">OK</div>
           </div>
-          <span class="mt-badge mt-badge--ok">Prévu</span>
-        </div>
-        <div class="mt-footer">
-          <span>🛡️</span>
-          <span>12 échéances surveillées en ce moment</span>
+          <div class="mt-item lp-mt-item--ok">
+            <div class="mt-dot mt-dot--ok"></div>
+            <div class="mt-info">
+              <div class="mt-name">Déclaration de revenus</div>
+              <div class="mt-date">Dans 4 mois</div>
+            </div>
+            <div class="mt-badge mt-badge--ok">OK</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="mamori-text">
-      <div class="section-eyebrow">🛡️ Mamori · protection</div>
-      <h2 class="solution-title mamori-title">Plus jamais une échéance ratée.</h2>
-      <p class="solution-desc">Hitoki connaît les délais pour chaque type d'échéance. Tu coches ce qui te concerne, il calcule quand te prévenir. J-30, J-7, J-1 selon l'urgence.</p>
-      <div class="mamori-categories">
-        <span class="mamori-cat"><span>🪪</span> Identité</span>
-        <span class="mamori-cat"><span>🚗</span> Véhicule</span>
-        <span class="mamori-cat"><span>🏠</span> Logement</span>
-        <span class="mamori-cat"><span>📋</span> Fiscal</span>
-        <span class="mamori-cat"><span>🏥</span> Santé</span>
-        <span class="mamori-cat"><span>💼</span> Emploi</span>
+      <div class="mamori-text">
+        <div class="lp-eyebrow lp-eyebrow--green">
+          <span class="lp-eyebrow-icon lp-eyebrow-icon--green">🛡️</span>
+          Mamori · protection
+        </div>
+        <h2 class="solution-title lp-solution-title">Tout ce que tu dois surveiller.<br>Sans y penser.</h2>
+        <p class="solution-desc lp-solution-desc">Hitoki connaît toutes les échéances qui comptent dans ta vie : documents d'identité, voiture, logement, santé, fiscal. Il te prévient bien avant qu'il soit trop tard.</p>
+        <div class="mamori-categories lp-mamori-categories">
+          <div class="mamori-cat lp-mamori-cat--green"><span>🪪</span> Identité</div>
+          <div class="mamori-cat lp-mamori-cat--green"><span>🚗</span> Véhicule</div>
+          <div class="mamori-cat lp-mamori-cat--green"><span>🏥</span> Santé</div>
+          <div class="mamori-cat lp-mamori-cat--green"><span>🏠</span> Logement</div>
+          <div class="mamori-cat lp-mamori-cat--green"><span>📋</span> Fiscal</div>
+          <div class="mamori-cat lp-mamori-cat--green"><span>💼</span> Emploi</div>
+        </div>
+        <a href="#formulaire" class="lp-btn-mamori">Configurer mes rappels au lancement →</a>
       </div>
-      <a href="#formulaire" class="btn-primary">Je ne veux plus jamais rien rater ↓</a>
     </div>
   </div>
-</section>
+</div>
 
 <!-- ══════════════════════════════════════
-     COMMENT ÇA MARCHE
+     COMMENT CA MARCHE
      ══════════════════════════════════════ -->
 <section class="how-section">
   <div class="section-eyebrow">Comment ça marche</div>
   <h2 class="section-title">Deux outils. Une seule logique.</h2>
-  <p class="section-sub">Chacun a son rôle, les deux se complètent.</p>
+  <p class="section-sub">Chacun a son rôle. Les deux se complètent.</p>
 
   <div class="how-grid">
     <div class="how-col">
@@ -287,14 +314,14 @@
         <div class="how-num">2</div>
         <div>
           <div class="how-title">Ton document est anonymisé puis supprimé</div>
-          <p class="how-text">Avant toute analyse, tes données personnelles sont retirées automatiquement. Le document original est supprimé immédiatement.</p>
+          <p class="how-text">Avant toute analyse, tes données personnelles sont retirées automatiquement. Le document original est supprimé immédiatement de nos serveurs.</p>
         </div>
       </div>
       <div class="how-step-item">
         <div class="how-num">3</div>
         <div>
           <div class="how-title">Tu reçois une synthèse claire</div>
-          <p class="how-text">En quelques secondes : ce que ça veut dire, ce que tu dois faire, les dates à retenir.</p>
+          <p class="how-text">En quelques secondes : ce que ça veut dire, ce que tu dois faire, les dates à retenir. Il ne reste que la synthèse, sans aucune donnée personnelle.</p>
         </div>
       </div>
     </div>
@@ -310,7 +337,7 @@
         <div class="how-num how-num--dark">1</div>
         <div>
           <div class="how-title">Tu choisis tes échéances</div>
-          <p class="how-text">Tu coches ce qui te concerne : voiture, logement, santé, fiscal... Hitoki connaît déjà les règles pour chaque type.</p>
+          <p class="how-text">Tu coches ce qui te concerne : voiture, logement, santé, fiscal... Hitoki connaît déjà les règles et les délais pour chaque type.</p>
         </div>
       </div>
       <div class="how-step-item">
@@ -324,7 +351,7 @@
         <div class="how-num how-num--dark">3</div>
         <div>
           <div class="how-title">Hitoki te prévient au bon moment</div>
-          <p class="how-text">J-30, J-7, J-1 selon l'échéance. Tu reçois une notification quand tu as encore le temps d'agir.</p>
+          <p class="how-text">J-30, J-7, J-1 selon l'échéance. Tu reçois une notification quand tu as encore le temps d'agir, pas la veille pour le lendemain.</p>
         </div>
       </div>
     </div>
@@ -332,7 +359,7 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     RAPPELS — liste
+     RAPPELS
      ══════════════════════════════════════ -->
 <section class="reminders-section">
   <div class="section-eyebrow">Ce que tu n'auras plus jamais à surveiller</div>
@@ -398,7 +425,7 @@
 </section>
 
 <!-- ══════════════════════════════════════
-     PARTICIPATION CTA
+     BIENTOT DISPONIBLE
      ══════════════════════════════════════ -->
 <section class="participate-block">
   <div class="participate-inner">
@@ -409,7 +436,7 @@
         Bientôt disponible
       </div>
       <h2 class="participate-title">On construit Hitoki.<br>Rejoins l'aventure.</h2>
-      <p class="participate-text">Hitoki n'est pas encore lancé. C'est le meilleur moment pour rejoindre les premiers ! Tu façonnes directement le produit, et tu accèdes à tout gratuitement pendant 2 mois.</p>
+      <p class="participate-text">Hitoki n'est pas encore lancé. C'est le meilleur moment pour rejoindre les premiers. Tu façonnes directement le produit, et tu accèdes à tout gratuitement pendant 2 mois.</p>
       <a href="#formulaire" class="participate-cta">Rejoindre la liste d'attente →</a>
     </div>
 
@@ -432,7 +459,7 @@
         <div class="participate-icon">⚡</div>
         <div>
           <div class="participate-item-title">Accès en avant-première</div>
-          <div class="participate-item-sub">Les inscrits sur la liste sont prévenus en premiers, avant tout le monde</div>
+          <div class="participate-item-sub">Les inscrits sur la liste sont prévenus en premier, avant tout le monde</div>
         </div>
       </div>
     </div>
@@ -506,9 +533,39 @@
     backToTop.classList.toggle('visible', window.scrollY > 400);
   });
 
+  // Burger menu
+  const burgerBtn = document.getElementById('burger-btn');
+  const navMenu = document.getElementById('nav-menu');
+  if (burgerBtn && navMenu) {
+    ['click', 'touchstart'].forEach(evt => {
+      burgerBtn.addEventListener(evt, (e) => {
+        e.preventDefault();
+        navMenu.classList.toggle('open');
+      });
+    });
+  }
+
+  // Pain dots (mobile)
+  function initPainDots() {
+    if (window.innerWidth > 640) return;
+    const grid = document.getElementById('pain-grid');
+    const dots = document.querySelectorAll('#pain-dots .pain-dot');
+    const hint = document.querySelector('#pain-dots .pain-scroll-hint');
+    const cards = grid ? grid.querySelectorAll('.pain-card') : [];
+    if (!grid || !dots.length) return;
+    grid.addEventListener('scroll', () => {
+      const cardWidth = cards[0].offsetWidth;
+      const index = Math.round(grid.scrollLeft / cardWidth);
+      dots.forEach((dot, i) => dot.classList.toggle('pain-dot--active', i === index));
+      if (hint) hint.classList.toggle('hidden', index >= cards.length - 1);
+    }, { passive: true });
+  }
+  document.addEventListener('DOMContentLoaded', initPainDots);
+  window.addEventListener('resize', initPainDots);
+
+  // Formulaire Web3Forms
   const form = document.getElementById('form-container');
   const confirmation = document.getElementById('confirmation');
-
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const data = new FormData(form);
