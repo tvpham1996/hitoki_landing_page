@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════
+   HITOKI — footer.css
+   CSS partagé pour les pages légales
+   ═══════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--peach-bg);
+  color: var(--night);
+  overflow-x: hidden;
+}
+
+/* ── NAVBAR ── */
+
+
+/* ── PAGES LÉGALES ── */
+.legal-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 140px 5% 80px;
+}
+
+.legal-page h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700; letter-spacing: -0.03em;
+  color: var(--night); margin-bottom: 8px;
+}
+
+.legal-date {
+  font-size: 13px; color: var(--muted);
+  margin-bottom: 48px; display: block;
+}
+
+.legal-page h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--night); letter-spacing: -0.02em;
+  margin: 36px 0 12px;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 15px; color: var(--night-soft);
+  line-height: 1.8; margin-bottom: 12px;
+}
+
+.legal-page ul {
+  padding-left: 20px; margin-bottom: 12px;
+}
+
+.legal-page a { color: var(--orange); text-decoration: none; }
+.legal-page a:hover { text-decoration: underline; }
+
+/* ── FORMULAIRE CONTACT ── */
+.contact-form { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; padding: 14px 18px;
+  border-radius: 12px; border: 1px solid var(--peach-dark);
+  background: white; color: var(--night);
+  font-size: 15px; font-family: 'Inter', sans-serif;
+  outline: none; transition: border-color 0.2s; resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { border-color: var(--orange); }
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--muted); }
+.contact-form textarea { min-height: 140px; }
+
+.contact-form button {
+  align-self: flex-start; padding: 14px 32px;
+  border-radius: 99px; border: none;
+  background: var(--orange); color: white;
+  font-size: 15px; font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer; transition: background 0.2s, transform 0.15s;
+}
+.contact-form button:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+/* ── CONFIRMATION ── */
+.confirmation {
+  display: none;
+  flex-direction: column; align-items: center; gap: 12px;
+  padding: 32px 24px; margin-top: 24px;
+  background: var(--peach-mid);
+  border-radius: 16px; color: var(--night);
+}
+.confirmation-icon  { font-size: 40px; }
+.confirmation-title { font-size: 20px; font-weight: 700; }
+.confirmation-text  { font-size: 14px; color: var(--muted); text-align: center; }
+
+/* ── FOOTER ── */
+footer {
+  padding: 32px 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+  border-top: 1px solid var(--peach-dark);
+}
+.footer-logo { display: flex; align-items: center; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--night); }
+.footer-copy { font-size: 12px; color: var(--muted); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  nav { padding: 14px 4%; }
+  .legal-page { padding: 110px 4% 60px; }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
